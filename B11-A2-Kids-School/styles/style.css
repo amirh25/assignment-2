@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+  }
+
+/* shared style */
+.display-flex{
+    display: flex; justify-content: space-around;
+}
+.secondary-color{
+    color: orange;
+}
+/* .primary-color{
+    color: #111111;
+} */
+.sky-blue{
+    color: skyblue;
+}
+
+.max-width{
+    max-width: 1159px;
+    
+}
+/* share style end */
+
+
+/* Hide the checkbox */
+ .toggle-menu {
+    display: none;
+  } 
+  
+  /* Hamburger start */
+
+   .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+  } 
+
+  /* hamburger end */
+
+
+header{
+     margin: 0 auto; margin-top: 20px; 
+}
+.header-nav{
+    justify-content:space-between; align-items: center;
+}
+.nav-link{
+    text-decoration: none; 
+}
+.nav-links {
+    
+    gap: 30px; 
+    list-style: none; 
+}
+
+.heading-text{
+    font-size: 1.25rem;
+}
+
+.link-one{
+    color: orange;
+}
+
+.link-three{
+    color: #05D4DF;
+}
+.link-four{
+    color: #5D58EF;
+}
+.btn1{
+    background-color: orange; color: #FFFFFF;
+    border: none; border-radius: 8px; width: 197px; height:50px; 
+}
+/* header banner style */
+.banner-section{
+    display: flex; margin-left: 0px; gap: 50px; margin-right: 0px; margin-top: 20px;align-items: center;
+}
+.empower{
+    color: orange;
+}
+.heading{
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+.btn2{
+    background-color: black; color: white; 
+    border: none; border-radius: 8px; width: 197px; height:50px;
+}
+
+.ban-img{
+    max-width: 469px;
+}
+.ban-descrip {
+    max-width: 640px;
+}
+.heading-text{
+    font-size: 1.25rem; font-weight: lighter;
+}
+
+/* banner header end */
+
+
+
+@media (max-width: 576px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .navigation,.btn1 {
+      display: none;
+    }
+      
+    .toggle-menu:checked + .hamburger + .navigation {
+      display: flex;
+    }
+  } 
